@@ -1,2 +1,3 @@
 rootProject.name = "Pythondemo"
 include ':app'
+include ':zzzz'

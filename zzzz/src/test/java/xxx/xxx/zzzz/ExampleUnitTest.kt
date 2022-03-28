@@ -1,6 +1,6 @@
-package com.abc.pythondemo
+package xxx.xxx.zzzz
 
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
 /**

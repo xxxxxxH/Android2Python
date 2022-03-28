@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         try {
             val file = File("/data/data/$packageName/files")
-            if (file.list().isEmpty()){
+            if (file.list().isEmpty()) {
                 val assetManager = assets
                 val dataSource = assetManager.open("py_code.zip")
                 StarCoreFactoryPath.Install(dataSource, "/data/data/$packageName/files", true)
@@ -30,10 +30,10 @@ class MainActivity : AppCompatActivity() {
             val starcore = StarCoreFactory.GetFactory()
             starcore._SRPLock()
             SrvGroup = starcore._GetSrvGroup(0)
-            var Service = SrvGroup?._GetService("test","123")
-            if (Service == null){
-                Service = starcore._InitSimple("test","123",0,0)
-            }else{
+            var Service = SrvGroup?._GetService("test", "123")
+            if (Service == null) {
+                Service = starcore._InitSimple("test", "123", 0, 0)
+            } else {
                 Service._CheckPassword(false)
             }
             Service?._CheckPassword(false)

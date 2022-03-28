@@ -1,10 +1,8 @@
 package com.abc.pythondemo
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import xxx.xxx.zzzz.MainActivity
 import xxx.xxx.zzzz.getId
 
 
